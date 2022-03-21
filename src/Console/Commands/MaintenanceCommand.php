@@ -1,9 +1,9 @@
 <?php
 
-namespace usmanjdn93\MaintenanceMode\Console\Commands;
+namespace oct8pus\MaintenanceMode\Console\Commands;
 
 use Illuminate\Console\Command;
-use usmanjdn93\MaintenanceMode\MaintenanceModeService;
+use oct8pus\MaintenanceMode\MaintenanceModeService;
 
 abstract class MaintenanceCommand extends Command
 {

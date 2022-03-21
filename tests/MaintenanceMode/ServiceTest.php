@@ -1,9 +1,9 @@
 <?php
 
-namespace usmanjdn93\MaintenanceMode\Testing;
+namespace oct8pus\MaintenanceMode\Testing;
 
-use usmanjdn93\MaintenanceMode\MaintenanceModeService;
-use usmanjdn93\MaintenanceMode\Providers\MaintenanceModeServiceProvider;
+use oct8pus\MaintenanceMode\MaintenanceModeService;
+use oct8pus\MaintenanceMode\Providers\MaintenanceModeServiceProvider;
 
 class ServiceTest extends AbstractTestCase
 {

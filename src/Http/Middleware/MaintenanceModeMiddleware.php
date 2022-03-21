@@ -1,18 +1,18 @@
 <?php
 
-namespace usmanjdn93\MaintenanceMode\Http\Middleware;
+namespace oct8pus\MaintenanceMode\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use usmanjdn93\MaintenanceMode\MaintenanceModeService;
+use oct8pus\MaintenanceMode\MaintenanceModeService;
 
 class MaintenanceModeMiddleware
 {
     /**
      * Maintenance Mode Service.
      *
-     * @var \usmanjdn93\MaintenanceMode\MaintenanceModeService
+     * @var \oct8pus\MaintenanceMode\MaintenanceModeService
      */
     protected $maintenance;
 

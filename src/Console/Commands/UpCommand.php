@@ -1,6 +1,6 @@
 <?php
 
-namespace usmanjdn93\MaintenanceMode\Console\Commands;
+namespace oct8pus\MaintenanceMode\Console\Commands;
 
 class UpCommand extends MaintenanceCommand
 {
