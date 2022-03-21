@@ -1,13 +1,9 @@
 {
-  "name": "usmanjdn93/lumen-8-maintenance-mode",
+  "name": "8ctopus/lumen-9-maintenance-mode",
   "type": "library",
   "description": "Define application maintenance mode.",
   "keywords": ["lumen", "maintenance", "mode"],
   "license": "MIT",
-  "require": {
-    "php": ">=7.2",
-    "laravel/lumen-framework": "^8.0"
-  },
   "authors": [
     {
       "name": "Jeremy Bruns",
@@ -34,21 +30,25 @@
       "email": "usmanjadoon93@gmail.com"
     }
   ],
+  "require": {
+    "php": ">=8.0.2",
+    "laravel/lumen-framework": "^9.0"
+  },
   "require-dev": {
-      "laravel/lumen":"~8.0",
-      "phpunit/phpunit": "^8.5",
-      "fzaninotto/faker": "^1.9.1",
-      "friendsofphp/php-cs-fixer": "^2.15"
+      "laravel/lumen":"~9.0",
+      "phpunit/phpunit": "^9.5.10",
+      "fakerphp/faker": "^1.9.1",
+      "friendsofphp/php-cs-fixer": "^3"
   },
   "autoload": {
     "psr-4": {
-      "usmanjdn93\\MaintenanceMode\\": "src"
+      "oct8pus\\MaintenanceMode\\": "src"
     }
   }
   ,
   "autoload-dev": {
     "psr-4": {
-      "usmanjdn93\\MaintenanceMode\\Testing\\": "src/tests/MaintenanceMode/"
+      "oct8pus\\MaintenanceMode\\Testing\\": "src/tests/MaintenanceMode/"
     }
   },
   "config":{
