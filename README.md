@@ -9,28 +9,38 @@ php 8.0.2 Lumen 9.x
 
 ## How to install
 
-    composer require 8ctopus/lumen-9-maintenance-mode
+```sh
+composer require 8ctopus/lumen-9-maintenance-mode
+```
 
 ## How to configure
 
 Add this to your AppServiceProvider or in bootstrap/app.php
 
-    $app->register(\oct8pus\MaintenanceMode\Providers\MaintenanceModeServiceProvider::class);
+```php
+$app->register(\oct8pus\MaintenanceMode\Providers\MaintenanceModeServiceProvider::class);
+```
 
 Add the up and down commands in app/console/Kernel.php
 
-    protected $commands = [
-        \oct8pus\MaintenanceMode\Console\Commands\DownCommand::class,
-        \oct8pus\MaintenanceMode\Console\Commands\UpCommand::class
-    ];
+```php
+protected $commands = [
+    \oct8pus\MaintenanceMode\Console\Commands\DownCommand::class,
+    \oct8pus\MaintenanceMode\Console\Commands\UpCommand::class
+];
+```
 
 ## Maintenance Mode on
 
-    php artisan down
+```sh
+php artisan down
+```
 
 ## Maintenance Mode off
 
+```sh
     php artisan up
+```
 
 ## IP based access
 
@@ -38,7 +48,7 @@ Currently only ipv4 and no ip ranges
 
 Add ALLOWED_IPS in your .env file
 
-```
+```ini
 ALLOWED_IPS=192.168.1.2,127.0.0.1,136.22.16.0
 ```
 
