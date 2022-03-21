@@ -58,7 +58,7 @@ class ServiceTest extends AbstractTestCase
 
         $this->artisan('up');
 
-        $this->assertFileNotExists($this->app->storagePath('framework/down'));
+        $this->assertFileDoesNotExist($this->app->storagePath('framework/down'));
     }
 
     /**
@@ -79,7 +79,7 @@ class ServiceTest extends AbstractTestCase
     {
         $service->setUpMode();
 
-        $this->assertFileNotExists($service->maintenanceFilePath());
+        $this->assertFileDoesNotExist($service->maintenanceFilePath());
     }
 
     /**
